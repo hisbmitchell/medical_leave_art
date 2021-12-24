@@ -1,0 +1,59 @@
+body {
+  /* background: url('bulb.png'); */
+  background-color: black;
+  background-size: 50vw;
+}
+
+
+.center {
+  display: block;
+padding-top: 15%;
+  margin-bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 1;
+}
+
+.mess {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  margin: none;
+
+}
+
+.mess3 {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  padding-top: 300%;
+  margin: none;
+
+}
+
+
+.float {
+  display:block;
+  z-index: 2;
+  position: absolute;
+
+}
+
+.object {
+  animation: MoveDown 100s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveDown {
+  from {
+      transform: translateY(-1050px) translateX(100px);
+
+}
+
+  to {
+      transform : translateY(1000px) translateX(700px);
+  }
+}
